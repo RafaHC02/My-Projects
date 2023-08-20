@@ -4,30 +4,68 @@
     padding: 0 0 0 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .superior-bar__container{
-    width:100%;
-    height:4em;
-    background: rgb(3, 3, 43);
-    position:sticky;
-    text-align: center;
-    color:white;
+    height: 3.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 79);
+    color: white;
 }
 
 .superior-bar__container-active{
     display:inline-block;
     width: auto;
-    height:3em;
-    border: 1px solid white;
+    height: 3em;
     position: relative;
-    padding: 0.2em;
+    padding: 0.5em;
+    text-align: center;
+
+}
+
+.superior-bar__container-active div , .inferior-bar__container-active div {
+    display: inline-block;
+    position: relative;
     top:50%;
     transform: translateY(-50%);
+}
 
+.superior-bar__container-user , .superior-bar__container-dev {
+    width: 9.1em; 
 
 }
 
-.superior-bar__container-active div{
-    display: inline-block;
+.superior-bar__container-user div , .superior-bar__container-dev div{
+    display: inline;
+    position: relative;
+    vertical-align: middle;
+    top: 0%;  
 
 }
- 
+
+.inferior-bar__container {
+    height: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: red;
+    color: white;
+}
+
+.inferior-bar__container-active {
+    display:inline-block;
+    width: auto;
+    height: 2.5em;
+    position: relative;
+    padding: 0.5em;
+    text-align: center;
+}
+
+.inferior-bar__container-active:hover , .superior-bar__container-active:hover {
+    border: 1px solid white;
+}
